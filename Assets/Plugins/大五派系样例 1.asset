@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a188b433183989440a69ac3b2d2e653a, type: 3}
+  m_Name: "\u5927\u4E94\u6D3E\u7CFB\u6837\u4F8B 1"
+  m_EditorClassIdentifier: 
+  personalityTraitDefinitions:
+  - name: "\u5F00\u653E\u6027"
+    description: "\u5BF9\u827A\u672F\u3001\u60C5\u611F\u5192\u9669\u548C\u591A\u6837\u6027\u7684\u6B23\u8D4F"
+    minValue: -100
+    maxValue: 100
+  - name: "\u5C3D\u8D23\u6027"
+    description: "\u81EA\u5F8B\uFF0C\u8D23\u4EFB\u4EE5\u53CA\u5BF9\u5916\u90E8\u671F\u5F85\u7684\u6EE1\u8DB3"
+    minValue: -100
+    maxValue: 100
+  - name: "\u5916\u503E\u6027"
+    description: "\u6295\u8EAB\u4E8E\u5916\u90E8\u4E16\u754C\uFF0C\u4E0E\u4EBA\u4EA4\u4E92\u7684\u503E\u5411"
+    minValue: -100
+    maxValue: 100
+  - name: "\u5B9C\u4EBA\u6027"
+    description: "\u4F53\u8D34\u3001\u5584\u826F\u3001\u5927\u65B9\u3001\u91CD\u4FE1\u7528\u3001\u4E50\u4E8E\u52A9\u4EBA"
+    minValue: -100
+    maxValue: 100
+  - name: "\u795E\u7ECF\u6027"
+    description: "\u5BB9\u6613\u611F\u5230\u6124\u6012\u3001\u7126\u8651\u6216\u6291\u90C1"
+    minValue: -100
+    maxValue: 100
+  relationshipTraitDefinitions:
+  - name: Affinity
+    description: (Required)
+    minValue: -100
+    maxValue: 100
+  presets: []
+  factions:
+  - id: 0
+    name: "\u73A9\u5BB6"
+    description: 
+    color: 0
+    parents: 
+    traits:
+    - 31
+    - -53
+    - -45
+    - -48
+    - 53
+    relationships: []
+    percentJudgeParents: 0
+  - id: 1
+    name: "\u738B\u5BB6"
+    description: 
+    color: 0
+    parents: 
+    traits:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    relationships: []
+    percentJudgeParents: 0
+  - id: 2
+    name: "\u674E\u5C0F\u534E"
+    description: 
+    color: 0
+    parents: 
+    traits:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    relationships: []
+    percentJudgeParents: 0
+  - id: 3
+    name: "\u674E\u660E"
+    description: 
+    color: 0
+    parents: 
+    traits:
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    relationships: []
+    percentJudgeParents: 0
+  - id: 4
+    name: "\u738B\u5927\u62FF"
+    description: 
+    color: 0
+    parents: 
+    traits:
+    - 42
+    - -23
+    - 14
+    - -19
+    - 48
+    relationships: []
+    percentJudgeParents: 0
+  traitInheritanceType: 0
+  relationshipInheritanceType: 0
+  nextID: 5

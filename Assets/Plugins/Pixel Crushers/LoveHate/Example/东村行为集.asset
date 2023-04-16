@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765aa6d0f28b2be4e8f092ea85f74278, type: 3}
+  m_Name: "\u4E1C\u6751\u884C\u4E3A\u96C6"
+  m_EditorClassIdentifier: 
+  factionDatabase: {fileID: 11400000, guid: db0b1fa7f9983ba4ab66d593785c1e40, type: 2}
+  deedTemplates:
+  - category: {fileID: 0}
+    tag: "\u5949\u627F"
+    description: "\u5BF9\u76EE\u6807\u4F7F\u7528\u751C\u8A00\u871C\u8BED"
+    impact: 31
+    aggression: 0
+    traits:
+    - 0
+    - 5
+    - 5
+    - 5
+    requiresSight: 0
+    radius: 0
+    permittedEvaluators: 0
+  - category: {fileID: 0}
+    tag: "\u4FAE\u8FB1"
+    description: "\u7528\u523B\u8584\u7684\u8BDD\u8BED\u635F\u5BF9\u65B9"
+    impact: -5
+    aggression: -1
+    traits:
+    - 0
+    - 5
+    - -5
+    - -5
+    requiresSight: 0
+    radius: 0
+    permittedEvaluators: 0
+  - category: {fileID: 0}
+    tag: "\u9001\u793C"
+    description: "\u9001\u7ED9\u5BF9\u8C61\u4E00\u4EFD\u793C\u7269"
+    impact: 10
+    aggression: -10
+    traits:
+    - 0
+    - 5
+    - 10
+    - 10
+    requiresSight: 0
+    radius: 0
+    permittedEvaluators: 0
+  - category: {fileID: 0}
+    tag: "\u5077\u7A83"
+    description: "\u5077\u8D70\u5BF9\u8C61\u7684\u7269\u54C1"
+    impact: -20
+    aggression: 40
+    traits:
+    - -50
+    - 20
+    - -20
+    - -20
+    requiresSight: 0
+    radius: 0
+    permittedEvaluators: 0
+  - category: {fileID: 0}
+    tag: "\u8D3F\u8D42"
+    description: "\u5411\u4ED6\u4EBA\u8FDB\u884C\u8D3F\u8D42"
+    impact: -20
+    aggression: 40
+    traits:
+    - -50
+    - 20
+    - -20
+    - -20
+    requiresSight: 0
+    radius: 0
+    permittedEvaluators: 0
