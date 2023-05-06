@@ -35,7 +35,7 @@ namespace PixelCrushers.LoveHate.Example
 		{
 			SetInteractionPanel(false);
 			
-			SetTalkPanel(false);
+			talkPanel.gameObject.SetActive(false);
 			// for (int i = 0; i < talkPanel.Length; i++)
 			// {
 			// 	SetTalkPanel(false,i);
@@ -79,43 +79,43 @@ namespace PixelCrushers.LoveHate.Example
 			}
 		}
 
-		public void SetInfoPanel(bool value)
+		public void SetInfoPanel()
 		{
 			if (infoPanel != null && infoPanel.gameObject != null)
 			{
-				infoPanel.gameObject.SetActive(value);
+				infoPanel.gameObject.SetActive(infoPanel.gameObject.activeSelf == false);
+			}
+		}
+
+		public void SetTalkPanel()
+		{
+			if (talkPanel != null && talkPanel.gameObject != null)
+			{
+				talkPanel.gameObject.SetActive(talkPanel.gameObject.activeSelf == false);
+
+				
 			}
 		}
 
 		// public void SetTalkPanel(bool value)
 		// {
-		// 	if (talkPanel != null && talkPanel.gameObject != null)
+		// 	foreach (var p in chatScript)
 		// 	{
-		// 		talkPanel.gameObject.SetActive(value);
-
-		// 		//talkPanel.gameObject.GetActive();
+		// 		//Debug.Log(p.name+","+npcNameText.text);
+		// 		if(p.name==npcNameText.text){
+					
+		// 				talkPanel.gameObject.SetActive(value);
+		// 			//Debug.Log(p.activeSelf);
+		// 		}
 		// 	}
+			
 		// }
 
-		public void SetTalkPanel(bool value)
-		{
-			foreach (var p in chatScript)
-			{
-				//Debug.Log(p.name+","+npcNameText.text);
-				if(p.name==npcNameText.text){
-					
-						talkPanel.gameObject.SetActive(value);
-					//Debug.Log(p.activeSelf);
-				}
-			}
-			
-		}
-
-		public void SetBagPanel(bool value)
+		public void SetBagPanel()
 		{
 			if (bagPanel != null && bagPanel.gameObject != null)
 			{
-				bagPanel.gameObject.SetActive(value);
+				bagPanel.gameObject.SetActive(bagPanel.gameObject.activeSelf == false);
 			}
 			
 		}

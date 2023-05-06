@@ -3,6 +3,8 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance;
+    public AudioClip[] audioClips;
+    [SerializeField] private AudioSource effectSource;
 
     private void Awake()
     {
@@ -18,10 +20,16 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    [SerializeField] private AudioSource _effectSource;
+    private void Start() {
+        effectSource = GetComponent<AudioSource>();
+        effectSource.PlayOneShot(audioClips[0]);
+    }
 
     public void PlaySound(AudioClip clip)
     {
-        _effectSource.PlayOneShot(clip);
+        effectSource.PlayOneShot(clip);
     }
+
+   
+
 }

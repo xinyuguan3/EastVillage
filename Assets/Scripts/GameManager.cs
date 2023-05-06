@@ -48,12 +48,12 @@ public class GameManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     public void GoToGameplay()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 
     public void GoToScene(string sceneName)

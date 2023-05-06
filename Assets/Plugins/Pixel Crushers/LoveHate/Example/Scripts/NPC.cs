@@ -144,13 +144,13 @@ namespace PixelCrushers.LoveHate.Example
 			sb.AppendFormat("\t唤起度: {0}\n" , factionMember.pad.arousal);
 			sb.AppendFormat("\t主导度: {0}\n", factionMember.pad.dominance);
 			sb.AppendFormat("\t快乐: {0}\n", factionMember.pad.happiness);
-			sb.AppendFormat("\tTemperament: {0}\n", factionMember.pad.GetTemperament());
+			// sb.AppendFormat("\tTemperament: {0}\n", factionMember.pad.GetTemperament());
 			
-			sb.Append("\nTraits:\n");
-			for (int i = 0; i < factionMember.factionManager.factionDatabase.personalityTraitDefinitions.Length; i++)
-			{
-				sb.AppendFormat("\t{0}: {1}\n", factionMember.factionManager.factionDatabase.personalityTraitDefinitions[i].name, factionMember.faction.traits[i]);
-			}
+			// sb.Append("\n特点:\n");
+			// for (int i = 0; i < factionMember.factionManager.factionDatabase.personalityTraitDefinitions.Length; i++)
+			// {
+			// 	sb.AppendFormat("\t{0}: {1}\n", factionMember.factionManager.factionDatabase.personalityTraitDefinitions[i].name, factionMember.faction.traits[i]);
+			// }
 			
 			sb.Append("\n关系:\n");
 			for (int r = 0; r < factionMember.faction.relationships.Count; r++)

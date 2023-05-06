@@ -35,8 +35,8 @@ public class ChatScript : MonoBehaviour
         //记录聊天
         m_ChatHistory.Add(m_InputWord.text);
 
-        string _msg=m_PostDataSetting.prompt+m_lan+" "+m_InputWord.text;
-        //string _msg =m_lan + " " + m_InputWord.text;
+        string _msg=m_PostDataSetting.prompt+m_emo+" "+m_InputWord.text;
+        //string _msg =m_emo + " " + m_InputWord.text;
         //发送数据
         //StartCoroutine (GetPostData (_msg,CallBack));
         StartCoroutine(m_GptTurboScript.GetPostData(_msg, m_OpenAI_Key, CallBack));
@@ -116,7 +116,7 @@ public class ChatScript : MonoBehaviour
 
     #region 文字逐个显示
     //逐字显示的时间间隔
-    [SerializeField]private float m_WordWaitTime=0.2f;
+    [SerializeField]private float m_WordWaitTime=0.05f;
     //是否显示完成
     [SerializeField]private bool m_WriteState=false;
     private IEnumerator SetTextPerWord(string _msg){
@@ -213,7 +213,7 @@ public class ChatScript : MonoBehaviour
     //Lo娘
     [SerializeField]private GameObject m_LoGirl;
     [SerializeField]private GameObject m_Girl;
-    [SerializeField]private string m_lan="使用中文回答";
+    [SerializeField]private string m_emo="使用愤怒语气回答";
     //
     public void SetLoGirlShowed(GameObject _settingPanel){
         if(!m_LoGirl.activeSelf)
