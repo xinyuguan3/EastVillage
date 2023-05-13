@@ -16,7 +16,8 @@ namespace PixelCrushers.LoveHate.Example
 
 		public RectTransform interactionPanel;
 		public RectTransform infoPanel;
-		public RectTransform talkPanel;
+		public RectTransform[] talkPanel;
+		public bool isTalking;
 		public RectTransform bagPanel;
 		public GameObject[] chatScript;
 
@@ -34,12 +35,13 @@ namespace PixelCrushers.LoveHate.Example
 		private IEnumerator Start()
 		{
 			SetInteractionPanel(false);
+			isTalking=false;
 			
-			talkPanel.gameObject.SetActive(false);
-			// for (int i = 0; i < talkPanel.Length; i++)
-			// {
-			// 	SetTalkPanel(false,i);
-			// }
+			//talkPanel.gameObject.SetActive(false);
+			for (int i = 0; i < talkPanel.Length; i++)
+			{
+				talkPanel[i].gameObject.SetActive(false);
+			}
 
 			// Wait for intro canvas to close:
 			float elapsed = 0;
@@ -89,12 +91,127 @@ namespace PixelCrushers.LoveHate.Example
 
 		public void SetTalkPanel()
 		{
-			if (talkPanel != null && talkPanel.gameObject != null)
-			{
-				talkPanel.gameObject.SetActive(talkPanel.gameObject.activeSelf == false);
-
+			switch (  npcNameText.text){
+				case "月":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="月Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+					
+				case "薛楚":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="薛楚Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
 				
+				case "小雅":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="小雅Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "阿七":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="阿七Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "周成":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="周成Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "孟璐":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="孟璐Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "苏英雄":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="苏英雄Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "滑头空":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="滑头空Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
+
+				case "沈厉枭":
+				foreach (RectTransform panel in talkPanel)
+				{
+					if (panel != null && panel.gameObject != null&&panel.gameObject.name=="沈厉枭Chat")
+					{
+						panel.gameObject.SetActive(panel.gameObject.activeSelf == false);
+						isTalking=panel.gameObject.activeSelf;
+						
+					}
+					
+				}
+				break;
 			}
+
+			
+			
 		}
 
 		// public void SetTalkPanel(bool value)

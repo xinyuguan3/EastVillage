@@ -9,7 +9,7 @@ namespace FYP.Transition
 
     public class TransitionManager : Singleton<TransitionManager>,ISaveable
     {
-        [SceneName]
+        //[SceneName]
         public string startSceneName = string.Empty;
 
         private CanvasGroup fadeCanvasGroup;

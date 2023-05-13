@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7dd374e1c2fb4242bc682f728c0f176, type: 3}
   m_Name: "\u836F\u74F6"
   m_EditorClassIdentifier: 
-  itemName: "\u9876\u9488"
+  itemName: "\u836F\u74F6"
   itemImage: {fileID: 21300000, guid: 18fba47d754da4d4a99267b3ff65bbb1, type: 3}
   equip: 0
-  itemInfo: "\u5728\u5730\u4E0A\u53D1\u73B0\u4E00\u679A\u9876\u9488\uFF0C\u662F\u88C1\u7F1D\u4E13\u7528\u9876\u9488\u3002\n\n\u5B5F\u7490\u5728\u8857\u4E0A\u5F00\u4E86\u4E00\u5BB6\u88C1\u7F1D\u5E97\uFF0C\u6216\u8BB8\u548C\u5979\u6709\u5173\u3002"
+  itemInfo: "\u4E00\u4E2A\u7A7A\u836F\u74F6\u3002\u91CC\u9762\u6709\u4E00\u4E9B\u7C89\u672B\u788E\u5C51\uFF0C\u5F88\u96BE\u5206\u8FA8\u8FD9\u662F\u4EC0\u4E48\u4E1C\u897F\uFF0C\u5E94\u8BE5\u4E0E\u859B\u695A\u6709\u5173\u3002"

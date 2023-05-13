@@ -17,6 +17,7 @@ namespace PixelCrushers.LoveHate.Example
 		public NPC currentTarget { get; private set; }
 
 		public InteractionUI interactionUI { get; private set; }
+		//public 
 
 		private DeedReporter m_deedReporter = null;
 
@@ -25,6 +26,7 @@ namespace PixelCrushers.LoveHate.Example
 			base.Start();
 			m_deedReporter = GetComponent<DeedReporter>();
 			interactionUI = FindObjectOfType<InteractionUI>();
+
 			StartCoroutine(UpdateUICoroutine());
 		}
 
@@ -45,7 +47,7 @@ namespace PixelCrushers.LoveHate.Example
 		
 		protected virtual void Update()
 		{
-			if(interactionUI.talkPanel.gameObject.activeSelf==false)
+			if(interactionUI.isTalking==false)
 			{
 				var x = transform.position.x + Input.GetAxis("Horizontal") * speedFactor;
 				var y = transform.position.y + Input.GetAxis("Vertical") * speedFactor;

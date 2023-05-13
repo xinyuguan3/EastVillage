@@ -56,11 +56,11 @@ public static class EventHandler
     }
 
     // //音效
-    public static event Action<SoundDetails> InitSoundEffect;
-    public static void CallInitSoundEffect(SoundDetails soundDetails)
-    {
-        InitSoundEffect?.Invoke(soundDetails);
-    }
+    // public static event Action<SoundDetails> InitSoundEffect;
+    // public static void CallInitSoundEffect(SoundDetails soundDetails)
+    // {
+    //     InitSoundEffect?.Invoke(soundDetails);
+    // }
 
     public static event Action<string,Vector3> TransitionEvent;
     public static void CallTransitionEvent(string sceneName,Vector3 pos)

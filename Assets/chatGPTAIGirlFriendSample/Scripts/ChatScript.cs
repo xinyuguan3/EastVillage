@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class ChatScript : MonoBehaviour
 {
  //API key
-	[SerializeField]private string m_OpenAI_Key="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";
+	[SerializeField]private string m_OpenAI_Key="";
 	// 定义Chat API的URL
 	private string m_ApiUrl = "https://api.openai.com/v1/completions";
     //配置参数
@@ -59,19 +59,19 @@ public class ChatScript : MonoBehaviour
          //记录聊天
         m_ChatHistory.Add(_callback);
 
-        if(m_PlayToggle.isOn){
-            StartCoroutine(Speek(_callback));
-        }
+        // if(m_PlayToggle.isOn){
+        //     StartCoroutine(Speek(_callback));
+        // }
        
 
     }
 
 
-    private IEnumerator Speek(string _msg){
-        yield return new WaitForEndOfFrame();
-        //播放合成并播放音频
-        //m_AzurePlayer.TurnTextToSpeech(_msg);
-    }
+    // private IEnumerator Speek(string _msg){
+    //     yield return new WaitForEndOfFrame();
+    //     //播放合成并播放音频
+    //     m_AzurePlayer.TurnTextToSpeech(_msg);
+    // }
 
 	private IEnumerator GetPostData(string _postWord,System.Action<string> _callback)
 	{

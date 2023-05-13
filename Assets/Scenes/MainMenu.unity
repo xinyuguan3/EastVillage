@@ -536,7 +536,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ff2cfef55f7714746bff8adf08e88c57, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
@@ -1225,7 +1225,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c94d0d9159b323c468875d457c41c5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 033baa53142a1c24eb31a95fc655e574, type: 3}
+  - {fileID: 8300000, guid: 02499f255f2fd7f458290dbb8c2ba875, type: 3}
+  - {fileID: 8300000, guid: 7e531249a44c2014fa2bb54195c29951, type: 3}
+  - {fileID: 8300000, guid: 740d27eae9ec8864b921dcd56d8c3069, type: 3}
+  - {fileID: 8300000, guid: 75a2b2a2d7fd7284086c5dbe39256b03, type: 3}
+  - {fileID: 8300000, guid: 67b1969d948bb1741bf1902a49e330a9, type: 3}
+  - {fileID: 8300000, guid: febf97111dc68924da653edf7d5ff328, type: 3}
+  - {fileID: 8300000, guid: 93784288d80db8447a77e5e23de3bcba, type: 3}
+  - {fileID: 8300000, guid: df641474a6b095d4eb8324dc093bc34b, type: 3}
+  - {fileID: 8300000, guid: 1704d17509c133b4b9bccfd1f0ef8fa6, type: 3}
   effectSource: {fileID: 0}
 --- !u!82 &450120267
 AudioSource:
@@ -1382,7 +1392,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ff2cfef55f7714746bff8adf08e88c57, type: 3}
     m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
@@ -1665,7 +1675,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1675,8 +1685,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 9ffe08065aaf95d47955b25872dc43ba, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: e3debb081aefff242883d8b5841d626d, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2062,6 +2072,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d758e47811dbbc04888d7dc172576c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputField: []
+  onEnterPressed:
+    m_PersistentCalls:
+      m_Calls: []
+  uiSound: {fileID: 8300000, guid: df641474a6b095d4eb8324dc093bc34b, type: 3}
 --- !u!1 &1117531408
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,7 +2309,7 @@ GameObject:
   - component: {fileID: 1159650952}
   - component: {fileID: 1159650951}
   m_Layer: 5
-  m_Name: Play (2)
+  m_Name: "\u9000\u51FA\u6309\u94AE"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2319,7 +2334,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -260}
+  m_AnchoredPosition: {x: -41, y: -197}
   m_SizeDelta: {x: 320, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1159650951
@@ -2341,7 +2356,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2351,8 +2366,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 9ffe08065aaf95d47955b25872dc43ba, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: e3debb081aefff242883d8b5841d626d, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2873,12 +2888,12 @@ GameObject:
   - component: {fileID: 1636415777}
   - component: {fileID: 1636415776}
   m_Layer: 5
-  m_Name: Play (1)
+  m_Name: "\u8BBE\u7F6E\u6309\u94AE"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1636415775
 RectTransform:
   m_ObjectHideFlags: 0

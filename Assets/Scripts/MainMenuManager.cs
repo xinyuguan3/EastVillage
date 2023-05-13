@@ -11,7 +11,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void Awake()
     {
-        _highScoreText.text = GameManager.Instance.HighScore.ToString();
+        //_highScoreText.text = GameManager.Instance.HighScore.ToString();
 
         if(!GameManager.Instance.IsInitialized)
         {
@@ -71,6 +71,11 @@ public class MainMenuManager : MonoBehaviour
     {
         SoundManager.Instance.PlaySound(_clickSound);
         GameManager.Instance.GoToGameplay();
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 
 }
